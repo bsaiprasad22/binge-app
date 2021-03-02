@@ -5,7 +5,7 @@ import movieTrailer from "movie-trailer";
 
 const base_url = "https://image.tmdb.org/t/p/original";
 function Row({ title, fetchUrl, isTrending }) {
-  const modal = document.getElementsByClassName("trailerBG")[0];
+  // const modal = document.getElementsByClassName("trailerBG")[0];
 
   const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
