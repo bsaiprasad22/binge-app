@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/github.io/binge-app/static/css/main.e4a45fa1.chunk.css",
+    "main.js": "/github.io/binge-app/static/js/main.b66247f9.chunk.js",
+    "main.js.map": "/github.io/binge-app/static/js/main.b66247f9.chunk.js.map",
+    "runtime-main.js": "/github.io/binge-app/static/js/runtime-main.453d1a82.js",
+    "runtime-main.js.map": "/github.io/binge-app/static/js/runtime-main.453d1a82.js.map",
+    "static/js/2.46ae16dd.chunk.js": "/github.io/binge-app/static/js/2.46ae16dd.chunk.js",
+    "static/js/2.46ae16dd.chunk.js.map": "/github.io/binge-app/static/js/2.46ae16dd.chunk.js.map",
+    "static/js/3.035aa618.chunk.js": "/github.io/binge-app/static/js/3.035aa618.chunk.js",
+    "static/js/3.035aa618.chunk.js.map": "/github.io/binge-app/static/js/3.035aa618.chunk.js.map",
+    "index.html": "/github.io/binge-app/index.html",
+    "static/css/main.e4a45fa1.chunk.css.map": "/github.io/binge-app/static/css/main.e4a45fa1.chunk.css.map",
+    "static/js/2.46ae16dd.chunk.js.LICENSE.txt": "/github.io/binge-app/static/js/2.46ae16dd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.453d1a82.js",
+    "static/js/2.46ae16dd.chunk.js",
+    "static/css/main.e4a45fa1.chunk.css",
+    "static/js/main.b66247f9.chunk.js"
+  ]
+}
