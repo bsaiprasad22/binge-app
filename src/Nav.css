@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .nav_logo {
   filter: invert(1);
   top: 9px;
@@ -7,18 +13,26 @@
   left: 20px;
 }
 
-.nav_avatar {
-  width: 45px;
-  object-fit: contain;
+.nav_search {
+  filter: invert(1);
+  top: 20px;
   position: fixed;
+  width: 30px;
+  object-fit: contain;
   right: 20px;
+}
+
+.nav_search:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all ease 0.5s;
 }
 
 .nav {
   position: fixed;
   top: 0;
   display: flex;
-  height: 40px;
+  height: 80px;
   width: 100%;
   justify-content: space-between;
   padding: 20px;

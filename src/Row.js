@@ -39,9 +39,11 @@ function Row({ title, fetchUrl, isTrending }) {
     console.log(trailerUrl);
   }
 
+  let wdth = String(Math.min(window.innerWidth * 0.9, 960));
+
   const opts = {
-    height: "585",
-    width: "960",
+    height: wdth / 1.641,
+    width: wdth,
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 1,

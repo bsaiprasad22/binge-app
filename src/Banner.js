@@ -20,9 +20,11 @@ function Banner() {
     fetchData();
   }, []);
 
+  let wdth = String(Math.min(window.innerWidth * 0.9, 960));
+
   const opts = {
-    width: "960px",
-    height: "585px",
+    width: wdth,
+    height: wdth / 1.641,
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 1,
@@ -67,7 +69,9 @@ function Banner() {
           >
             Play
           </button>
-          <button className="banner_button">My List</button>
+          <a href="#explore">
+            <button className="banner_button">Explore</button>
+          </a>
           {trailerUrl && (
             <div className="trailerbg" onClick={() => hideModal()}>
               <YouTube videoId={trailerUrl} opts={opts} />
@@ -75,10 +79,10 @@ function Banner() {
           )}
         </div>
 
-        <h2 className="banner_description">{truncate(movie?.overview, 300)}</h2>
+        <h2 className="banner_description">{truncate(movie?.overview, 200)}</h2>
       </div>
 
-      <div className="fade_bottom"></div>
+      <div className="fade_bottom" id="explore"></div>
     </header>
   );
 }

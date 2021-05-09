@@ -1,20 +1,22 @@
-import './App.css';
-import Row from './Row';
-import Banner from './Banner';
-import Nav from './Nav';
-import requests from './requests';
-
+import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./Home";
+import Search from "./Search";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Banner />
-      {/* <h1>Hello World</h1> */}
-      <Row isTrending title="Trending" fetchUrl={requests.fetchTrending}/>
-      <Row title="Action Movies" fetchUrl={requests.fetchAction}/>
-      <Row title="Comedy Movies" fetchUrl={requests.fetchComedy}/>
-      <Row title="Sci-Fi Movies" fetchUrl={requests.fetchSciFi}/>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/search">
+            <Search />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
