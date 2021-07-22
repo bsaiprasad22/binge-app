@@ -1,4 +1,4 @@
-const API_KEY = `81d66b8e0cc89950c3aaf91b18832d52`;
+const API_KEY = TMDB_API_KEY;
 
 const requests = {
   fetchTrending: `https://api.themoviedb.org/3/trending/all/day?api_key=${API_KEY}`,
